@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* White background for a clean look */
+    color: black; /* Black text */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black; /* Black header */
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header-controls input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid black; /* Black border for input */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    background-color: white; /* White navbar */
+    position: relative; /* Initially relative */
+    width: 100%; /* Full width */
+    transition: top 0.3s, opacity 0.3s; /* Smooth transition for top and opacity */
+    opacity: 1; /* Full opacity */
+}
+
+.navbar.fixed {
+    position: fixed; /* Fixed when scrolled */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    opacity: 0.9; /* Slightly transparent when fixed */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0; /* Add some padding */
+    display: flex;
+    justify-content: center; /* Center the links */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: black; /* Black links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar a:hover {
+    color: gray; /* Gray on hover */
+}
+
+.carousel {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: white; /* White background for carousel */
+    margin-top: 60px; /* Space for navbar */
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black; /* Black text for carousel */
+}
+
+main {
+    padding: 20px;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid black; /* Black border for products */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black; /* Black footer */
+    color: white; /* White text in footer */
+}
+
+.cta {
+    margin-bottom: 10px; /* Space above the CTA */
+}
+
+.cta-button {
+    background-color: white; /* White button */
+    color: black; /* Black text on button */
+    padding: 10px 20px;
+    border: 1px solid black; /* Black border */
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.cta-button:hover {
+    background-color: black; /* Black on hover */
+    color: white; /* White text on hover */
+}
+
+.reviews {
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white; /* White background for reviews */
+}
+
+.review-image {
+    width: 50px; /* Set image size */
+    height: 50px; /* Set image size */
+    border-radius: 50%; /* Circular images */
+    margin-right: 15px; /* Space between image and content */
+}
+
+.review-content {
+    flex-grow: 1; /* Allow content to fill the space */
+}
+
+.rating {
+    color: gold; /* Gold color for stars */
+}
